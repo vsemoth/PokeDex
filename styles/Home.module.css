@@ -2,19 +2,39 @@
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: space-between;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: #eee;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0,5);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.list-inline-item {  
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 200px;
+  width: 200px;
+}
+
+.list-inline-item .card {
+  margin-top: 0px;
+  min-width: 120%;
+  height: fit-content;
+}
+
+.list-inline-item .name {
+  margin: 15px;
+  letter-spacing: 1px;
 }
 
 .footer {
@@ -60,15 +80,6 @@
   font-size: 1.5rem;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
 .grid {
   display: flex;
   align-items: center;
@@ -82,12 +93,12 @@
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
-  color: inherit;
+  color: #fed3ec;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
+  width: 100%;
 }
 
 .card:hover,
