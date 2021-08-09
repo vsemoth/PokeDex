@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { useEffect } from "react";
 import Card from "../pages/Card";
 import styles from "../styles/Home.module.css";
 
@@ -11,7 +10,7 @@ const Pokemon = ({ pokeURL }) => {
           <ul className="list-inline">
             {pokeURL.map((res, i) => (
               <li className="list-inline-item" key={i}>
-                <Link href={res.name.toString()}>
+                <Link href={`/${res.name.toString()}`}>
                   <a>
                     <Card id={i + 1} />
                     <br />

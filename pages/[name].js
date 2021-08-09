@@ -1,8 +1,12 @@
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
+import Image from "next/image";
 
 export const getStaticPaths = async () => {
-  const res = await fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=1119");
+  const res = await fetch(
+    "https://pokeapi.co/api/v2/pokemon?offset=0&limit=1118"
+  );
+
   const data = await res.json();
 
   const paths = data.results.map((pokemon) => {
@@ -36,18 +40,27 @@ const Details = ({ pokemon }) => {
       <section>
         <div className={styles.container}>
           <h1>
-            <img
+            <Image
               src={`https://raw.githubusercontent.com/ZeChrales/PogoAssets/master/pokemon_icons/pokemon_icon_${pokemon.id
                 .toString()
                 .padStart(3, "0")}_00.png`}
+              width={300}
+              height={300}
+              alt={pokemon.name}
             />
             {pokemon.name}
-            <img src={pokemon.sprites.front_default} />
+            <Image
+              src={pokemon.sprites.front_default}
+              width={160}
+              height={160}
+              alt={pokemon.name}
+            />
           </h1>
-          <img
+          <Image
             src={`https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png`}
             width={800}
             height={800}
+            alt={pokemon.name}
           />
         </div>
       </section>
