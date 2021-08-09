@@ -4,10 +4,6 @@ import Card from "../pages/Card";
 import styles from "../styles/Home.module.css";
 
 const Pokemon = ({ pokeURL }) => {
-    useEffect(async () => {
-    const res = pokeURL.map((i) => i.name);
-  }, []);
-
   return (
     <>
       <div className={styles.container}>
