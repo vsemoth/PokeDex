@@ -8,9 +8,9 @@ const NotFound = () => {
     useEffect(() => {
         setTimeout(() => {
             // router.go(-1);
-            router.push('/');
+            router.push('/', undefined, { shallow: true });
         }, 3000);
-    }, []);
+    }, [router]);
 
     return (
         <div className="not-found">
