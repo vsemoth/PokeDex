@@ -44,10 +44,13 @@ const Details = ({ pokemon }) => {
               src={`https://raw.githubusercontent.com/ZeChrales/PogoAssets/master/pokemon_icons/pokemon_icon_${pokemon.id
                 .toString()
                 .padStart(3, "0")}_00.png`}
-                priority={true}
               width={300}
               height={300}
               alt={pokemon.name}
+              placeholder="blur"
+              blurDataURL={`https://raw.githubusercontent.com/ZeChrales/PogoAssets/master/pokemon_icons/pokemon_icon_${pokemon.id
+                .toString()
+                .padStart(3, "0")}_00.png`}
             />
             {pokemon.name}
             <Image
@@ -60,10 +63,11 @@ const Details = ({ pokemon }) => {
           </h1>
           <Image
             src={`https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png`}
-            priority={true}
             width={800}
             height={800}
             alt={pokemon.name}
+            placeholder="blur"
+            blurDataURL={`https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png`}
           />
         </div>
       </section>
