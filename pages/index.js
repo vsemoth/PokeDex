@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/dist/client/link";
 import styles from "../styles/Home.module.css";
 import Pokemon from "../components/Pokemon";
 
@@ -13,7 +14,7 @@ export default function Home({ pokeURL }) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to the online <a href="/">Pokedex</a>
+          Welcome to the online <Link href="/"><a>Pokedex</a></Link>
         </h1>
 
         <p className={styles.description}>
