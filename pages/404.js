@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { useEffect } from 'react';
+import Link from "next/dist/client/link";
 import { useRouter } from 'next/dist/client/router';
 
 const NotFound = () => {

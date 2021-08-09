@@ -6,10 +6,11 @@ const Card = ({ id }) => {
     <Image
       className={styles.card}
       src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}
-      priority={true}
       width={100}
       height={100}
       alt={`pokemon #${id}`}
+      placeholder="blur"
+      blurDataURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}
     />
   );
 };
