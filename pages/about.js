@@ -23,8 +23,8 @@ const About = (props) => {
             The Sprites come from the same api as the main Pokemon data, the
             feature image comes from another api and the 3D image is obtained
             from a Git repository. Credit to PokeAPI for availing their
-            resources. This PokeDex was developed by ID Web's Lwandile Rozani,
-            the chief engineer at ID Webs Market, using Next.js - a React based
+            resources. This PokeDex was developed by Lwandile Rozani,
+            the chief engineer at ID Webs Market, using Next.js: a React based
             framework for web artisans.
           </h5>
           </div>

@@ -21,7 +21,7 @@ export default function Home({ pokeURL }) {
           <em>A Full Pokemon PokeDex</em>
         </p>
 
-        <div className={styles.grid} key={pokeURL.map(poke => poke.name)}>
+        <div className={styles.grid, styles.card} key={pokeURL.map(poke => poke.name)}>
           <Pokemon pokeURL = {pokeURL} />
         </div>
       </main>

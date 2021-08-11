@@ -4,7 +4,7 @@ import Image from "next/image";
 const Card = ({ id }) => {
   return (
     <Image
-      className={styles.card}
+      className={styles.image}
       src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}
       width={100}
       height={100}
