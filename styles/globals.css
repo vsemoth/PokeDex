@@ -58,3 +58,15 @@ footer {
   color: #4979ff;
   text-decoration: underline;
 }
+
+.table {
+  table-layout: fixed;
+}
+
+th, td {
+  border: #000 1px solid;
+}
+
+.tableBordered {
+  border: #000 2px solid;
+}

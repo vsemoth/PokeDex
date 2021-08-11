@@ -14,7 +14,7 @@ export default function Home({ pokeURL }) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to the online <Link href="/"><a>Pokedex</a></Link>
+          Welcome to the online <Link href="/"><a>Pokedex</a></Link> V2
         </h1>
 
         <p className={styles.description}>
