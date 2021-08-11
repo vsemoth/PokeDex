@@ -74,7 +74,7 @@ const Details = ({ pokemon }) => {
               <td>{pokemon.id}</td>
               <td>{pokemon.weight}</td>
               <td>{pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}</td>
-              <td>{pokemon.types.map((el) => el.type.name[0].toUpperCase() + el.type.name.slice(1))}</td>
+              <td>{pokemon.types.map((el) => el.type.name[0].toUpperCase() + el.type.name.slice(1) + `, `)}</td>
               <td>
                 {pokemon.abilities.map(
                   (ability) => ability.ability.name[0].toUpperCase() + ability.ability.name.slice(1) + `, `

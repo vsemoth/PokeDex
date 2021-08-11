@@ -143,5 +143,23 @@
   .grid {
     width: 100%;
     flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .main {
+    background-color: #eee;
+    border-radius: 0;
+    box-shadow: 0 1px 5px rgba(100, 100, 100, 0,5);
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .table {
+    width: fixed;
+    text-align: left;
+    padding: 0;
+    margin: 0 auto;
   }
 }
