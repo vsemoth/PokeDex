@@ -36,7 +36,7 @@ const Details = ({ pokemon }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Hi {pokemon.name}</title>
+        <title>Hi {pokemon.name[0].toUpperCase()+pokemon.name.slice(1)}</title>
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -63,19 +63,20 @@ const Details = ({ pokemon }) => {
         </h1>
         <div className={styles.grid}>
           <table className="table tableBordered">
+            <caption>Pokemon Data</caption>
             <thead>
-              <th className="th id">ID:</th>
-              <th className="th weight">Weight:</th>
-              <th className="th pn">Pokemon:</th>
-              <th className="th pt">Type:</th>
-              <th className="th pa">Abilities:</th>
+              <th className={styles.h, styles.id}>ID</th>
+              <th className={styles.h, styles.weight}>Weight</th>
+              <th className={styles.h}>Pokemon</th>
+              <th className={styles.h}>Type</th>
+              <th className={styles.h}>Abilities</th>
             </thead>
             <tbody>
-              <td>{pokemon.id}</td>
-              <td>{pokemon.weight}</td>
-              <td>{pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}</td>
-              <td>{pokemon.types.map((el) => el.type.name[0].toUpperCase() + el.type.name.slice(1) + `, `)}</td>
-              <td>
+              <td className={styles.d, styles.id}>{pokemon.id}</td>
+              <td className={styles.d, styles.weight}>{pokemon.weight}</td>
+              <td className={styles.d}>{pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}</td>
+              <td className={styles.d}>{pokemon.types.map((el) => el.type.name[0].toUpperCase() + el.type.name.slice(1) + `, `)}</td>
+              <td className={styles.d}>
                 {pokemon.abilities.map(
                   (ability) => ability.ability.name[0].toUpperCase() + ability.ability.name.slice(1) + `, `
                 )}
