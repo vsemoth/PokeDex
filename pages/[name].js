@@ -55,10 +55,10 @@ const Details = ({ pokemon }) => {
           {pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}
           <Image
             src={pokemon.sprites.front_default}
-            priority={true}
             width={160}
             height={160}
             alt={pokemon.name}
+            blurDataURL={pokemon.sprites.front_default}
           />
         </h1>
         <div className={styles.grid}>
