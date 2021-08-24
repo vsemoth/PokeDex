@@ -6,11 +6,11 @@ const Navbar = () => {
     <nav className="navbar navbarFixedTop">
       <div className="logo">
         <Image
-          src={`/${'download.png'}`}
+          src={`/${'webs_logo.ico'}`}
           alt="site logo"
           width={47}
           height={47}
-          blurDataURL={`/${'download.png'}`}
+          blurDataURL={`/${'webs_logo.ico'}`}
         />
       </div>
       <Link href="/">
